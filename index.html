@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contra o Bullying - Bullying Físico</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/lucide-icons/dist/umd/lucide.min.js" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <i data-lucide="shield"></i>
+          <span>Contra o Bullying</span>
+        </div>
+        <nav class="nav">
+          <button onclick="scrollToSection('consequencias')">Consequências</button>
+          <button onclick="scrollToSection('legal')">Aspectos Legais</button>
+          <button onclick="scrollToSection('ajuda')">Buscar Ajuda</button>
+        </nav>
+        <button class="btn-primary" onclick="scrollToSection('ajuda')">
+          <i data-lucide="phone"></i> Preciso de Ajuda
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero fade-element">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="badge">Informação que Salva Vidas</span>
+      <h1>Bullying Físico:<br><span>Reconheça, Denuncie, Proteja</span></h1>
+      <p>O bullying físico não é brincadeira. É agressão e tem consequências graves para vítimas e agressores.</p>
+      <div class="hero-buttons">
+        <button class="btn-white" onclick="scrollToSection('consequencias')">Entenda as Consequências</button>
+        <button class="btn-outline" onclick="scrollToSection('ajuda')"><i data-lucide="phone"></i> Canais de Ajuda</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consequências -->
+  <section id="consequencias" class="section fade-element">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge gold">Impactos Graves</span>
+        <h2>Consequências do Bullying Físico</h2>
+        <p>Os efeitos vão muito além dos hematomas e afetam toda a vida da vítima</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="icon red"><i data-lucide="heart"></i></div>
+          <h3>Danos Físicos</h3>
+          <ul>
+            <li>Hematomas, cortes e arranhões</li>
+            <li>Fraturas e dores crônicas</li>
+            <li>Lesões permanentes em casos graves</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon gray"><i data-lucide="brain"></i></div>
+          <h3>Traumas Emocionais</h3>
+          <ul>
+            <li>Ansiedade e depressão</li>
+            <li>Baixa autoestima e medo constante</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon gold"><i data-lucide="book-open"></i></div>
+          <h3>Impacto Escolar</h3>
+          <ul>
+            <li>Queda no rendimento</li>
+            <li>Faltas e evasão escolar</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon gray"><i data-lucide="users"></i></div>
+          <h3>Isolamento Social</h3>
+          <ul>
+            <li>Vergonha e constrangimento</li>
+            <li>Afastamento de amigos e familiares</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="alert fade-element">
+        <i data-lucide="alert-circle"></i>
+        <div>
+          <h3>⚠️ Casos Mais Graves</h3>
+          <p>Podem ocorrer automutilação e pensamentos suicidas. Busque ajuda:</p>
+          <div class="alert-help">
+            CVV (Centro de Valorização da Vida): <strong>188</strong> - Atendimento 24h gratuito
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ajuda -->
+  <section id="ajuda" class="section help-section fade-element">
+    <div class="container">
+      <div class="section-header light">
+        <span class="badge gold">Você Não Está Sozinho</span>
+        <h2>Busque Ajuda Agora</h2>
+        <p>Existem diversos canais prontos para ajudar você ou alguém que você conhece</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="help-card">
+          <div class="icon gold"><i data-lucide="phone"></i></div>
+          <h3>Disque 100</h3>
+          <p>Direitos Humanos - Denúncias anônimas 24h</p>
+        </div>
+        <div class="help-card">
+          <div class="icon gold"><i data-lucide="heart"></i></div>
+          <h3>CVV - 188</h3>
+          <p>Apoio emocional e prevenção ao suicídio</p>
+        </div>
+        <div class="help-card">
+          <div class="icon gold"><i data-lucide="shield"></i></div>
+          <h3>Disque 190</h3>
+          <p>Emergências e violência física imediata</p>
+        </div>
+        <div class="help-card">
+          <div class="icon gold"><i data-lucide="users"></i></div>
+          <h3>Conselho Tutelar</h3>
+          <p>Proteção de crianças e adolescentes</p>
+        </div>
+      </div>
+
+      <div class="alert gold fade-element">
+        <i data-lucide="alert-circle"></i>
+        <div>
+          <h3>Como Denunciar na Escola?</h3>
+          <ol>
+            <li>Procure a direção ou coordenação</li>
+            <li>Documente tudo (fotos, datas, testemunhas)</li>
+            <li>Peça protocolo de denúncia</li>
+            <li>Se a escola não agir, vá à Secretaria de Educação</li>
+            <li>Registre boletim de ocorrência</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Contra o Bullying - Todos os direitos reservados</p>
+      <p>Em caso de emergência, procure ajuda profissional imediatamente.</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/lucide@latest"></script>  
+  <script src="https://unpkg.com/lucide-icons"></script>
+  <script src="script.js"></script>
+</body>
+</html>
