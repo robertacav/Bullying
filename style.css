@@ -5,40 +5,6 @@ body {
   background: #f9f9f9;
 }
 
-.logo {
-  display: flex;
-  align-items: center;  
-  gap: 8px;
-  font-weight: bold;
-  color: #800020;
-  margin-left: 20px; /* empurra o logo (imagem) para a direita */
-}
-/* Ajuste em telas menores */
-@media (max-width: 600px) {
-  .logo {
-    margin-left: 8px;
-  }
-}
-
-
-/* Faz a imagem respeitar o tamanho do container e ser responsiva */
-.logo-img {
-  width: 64px;
-  height: 64px;
-  max-width: 100%;
-  object-fit: cover; /* mantém proporção preenchendo a área */
-  display: block;
-  border-radius: 8px;
-}
-
-/* Ajuste para telas menores */
-@media (max-width: 600px) {
-  .logo-img {
-    width: 48px;
-    height: 48px;
-    border-radius: 6px;
-  }
-}
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -68,6 +34,21 @@ header.header {
   gap: 8px;
   font-weight: bold;
   color: #800020;
+  margin-left: 20px;
+}
+
+.logo-img {
+  width: 64px;
+  height: 64px;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav button {
@@ -260,7 +241,7 @@ header.header {
   border-radius: 6px;
 }
 
-/* ======== HELP SECTION (CORRIGIDO) ======== */
+/* ======== HELP SECTION ======== */
 .help-section {
   background: linear-gradient(135deg, #800020, #5a0016);
   color: white;
@@ -308,4 +289,190 @@ header.header {
 .fade-element.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ======== RESPONSIVIDADE ======== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .section {
+    padding: 80px 20px;
+  }
+  
+  .cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* Tablets pequenos e mobile grande (600px - 768px) */
+@media (max-width: 768px) {
+  .header-content {
+    height: 60px;
+  }
+  
+  .logo {
+    margin-left: 10px;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .nav button {
+    margin: 0 6px;
+    font-size: 14px;
+  }
+  
+  .btn-primary {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  
+  .hero {
+    padding: 100px 20px 80px;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .section {
+    padding: 60px 15px;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .alert {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+  }
+}
+
+/* Mobile (480px - 600px) */
+@media (max-width: 600px) {
+  .header-content {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    margin-left: 8px;
+    margin-bottom: 5px;
+  }
+  
+  .logo-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+  }
+  
+  .nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .nav button {
+    margin: 5px;
+    font-size: 13px;
+  }
+  
+  .hero {
+    padding: 90px 15px 60px;
+  }
+  
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-white, .btn-outline {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .section {
+    padding: 50px 10px;
+  }
+  
+  .section-header {
+    margin-bottom: 30px;
+  }
+  
+  .section-header h2 {
+    font-size: 1.4rem;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .card, .help-card {
+    padding: 15px;
+  }
+}
+
+/* Mobile pequeno (até 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .logo {
+    font-size: 0.9rem;
+  }
+  
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+  
+  .hero p {
+    font-size: 0.9rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.2rem;
+  }
+  
+  .badge {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer {
+    padding: 20px 0;
+    font-size: 0.8rem;
+  }
+}
+
+/* Ajustes para telas muito grandes */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
 }
