@@ -5,7 +5,40 @@ body {
   background: #f9f9f9;
 }
 
+.logo {
+  display: flex;
+  align-items: center;  
+  gap: 8px;
+  font-weight: bold;
+  color: #800020;
+  margin-left: 20px; /* empurra o logo (imagem) para a direita */
+}
+/* Ajuste em telas menores */
+@media (max-width: 600px) {
+  .logo {
+    margin-left: 8px;
+  }
+}
 
+
+/* Faz a imagem respeitar o tamanho do container e ser responsiva */
+.logo-img {
+  width: 64px;
+  height: 64px;
+  max-width: 100%;
+  object-fit: cover; /* mantém proporção preenchendo a área */
+  display: block;
+  border-radius: 8px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 600px) {
+  .logo-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+  }
+}
 .container {
   max-width: 1100px;
   margin: 0 auto;
